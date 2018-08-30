@@ -10,7 +10,7 @@ class MovingAverager private(val window:Int) {
   /**
     *
     * @param diffByHour collections of absolute differences ordered in increasing hour
-    * @return
+    * @return moving averages
     */
   def getSimpleAverages(diffByHour: Seq[Seq[Double]]) : List[Double] = {
     val chunks: List[Seq[Seq[Double]]] = (leftOverChunk ++ diffByHour).sliding(window).toList
