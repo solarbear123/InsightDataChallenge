@@ -12,7 +12,7 @@ import scala.io.Source
 object PredictionValidation {
 
   def main(args : Array[String]): Unit = {
-    if (args.size != 4) {
+    if (args.length != 4) {
       println("Arguments: window.txt actual.txt predicted.txt comparison.txt")
       System.exit(1)
     }
